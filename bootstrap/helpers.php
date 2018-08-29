@@ -6,3 +6,6 @@
  * Time: 10:58
  */
 //compoer dumpautoload
+function route_class(){
+    return str_replace('.','-',Route::currentRouteName());
+}
