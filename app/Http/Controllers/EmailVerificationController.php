@@ -11,7 +11,7 @@ class EmailVerificationController extends Controller
 {
     public function verify(Request $request)
     {
-        // 从 url 中获取 `email` 和 `token` 两个参数
+        // 从 url 中获取 `email` 和 `token` 两个参数,$request->input()表示
         $email = $request->input('email');
         $token = $request->input('token');
         // 如果有一个为空说明不是一个合法的验证链接，直接抛出异常。
